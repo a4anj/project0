@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> table </title>
+  <link rel="stylesheet" type="text/css" href="css/uni.css"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <style> 
+      .container{ 
+	            background-color:#d3cdcd;
+				height:1200px}
+	
+    .grid   { padding:10px;
+	          display:grid;
+		      background-color:green;
+			  grid-column-gap:10px;
+			  grid-row-gap:5px;
+			  grid-template-columns: 200px 200px auto auto;} 
+	.gridItm { background-color: white;
+               text-align:center;
+               padding-bottom:20px;
+               padding-top:20px;		  }
+     h1,h4,h5{ font-family: time;}	
+    .btn { border: 1px solid grey; }
+
+    @media(max-width:1070px)
+        { 
+		  header {position:fixed; }
+		  #homeBut {
+		            top: 20px;
+		            left:35%;}
+		  .btnBar {position:fixed; 
+		           left:7%;
+		           top:73px;}
+		  .container {position:absolute;}		   
+		  .btn {padding:0px 10px;
+		        margin:0px 0px;
+				font-size:12px;}
+		}
+     .row>div{ border: 5px solid white;
+               background-color:teal;
+               padding:10px;
+               color:white;			   
+               text-align:center;
+               font-family:times;	
+			   }	 
+   
+  </style>
+</head>
+ 
+  <body>
+   <header>
+     <img src="img/logo1.jpg" alt="image not found!!">
+	 <div class="btnBar">
+	   <button onclick="document.location = 'gallery.html'" class="btn">Gallery</button>
+	   <button onclick="document.location = 'list.html'" class="btn">Lists</button>
+	   <button onclick="document.location = 'table.html'" class="btn">Table</button>
+	   <button onclick="document.location='form.html'" class="btn">Form</button>
+	   <button type="button" class="btn">blankButton</button>
+	</div> 
+   </header>
+  <div class="container">
+     <br />
+	 <be />
+	 <br />
+	 <br />
+	 
+	 <div class="alert alert-success" role="alert">
+         <h4 class="alert-heading">Hello!</h4>
+          <p>In the following examples first-table is designed using local css code, Next two tables are designed using bootstrap classes.Due to adding of 
+		  bootstrap stylesheet some of default bootstrap designes are applied in the whole page, unless not overriden by local code.</p>
+          <hr>
+          <p class="mb-0">This message itself is also designed by bootstrap.</p>
+		 </div> 
+		  <br/>
+	 <h1 style="text-align:center; color:#508AA5;">Table</h1>
+      <h5 style="text-align:center; color:#508AA5;">Following table is done with "display:grid"</h5>
+	  <div class="grid">
+        <div class="gridItm">1</div>
+        <div class="gridItm">2</div>
+        <div class="gridItm">3</div>
+        <div class="gridItm">4</div>
+        <div class="gridItm">5</div>
+        <div class="gridItm">6</div>
+        <div class="gridItm">7</div>
+        <div class="gridItm">8</div>
+        <div class="gridItm">9</div>
+        <div class="gridItm">10</div>
+        <div class="gridItm">11</div>
+        <div class="gridItm">12</div>		
+     </div>
+	 
+	 <br/>
+	 <br/>
+	 <h5 style="color:#508AA5; text-align:center;"> Following table is alligned using bootsreap</h5>
+	 <h5 style="color:#508AA5; text-align:center;"> Container is devided into 12 columns</h5>
+	   <div class="row">
+	     <div class="col-2">2 col sp</div>
+		 <div class="col-3">3 col space</div>
+		 <div class="col-3">3 col space</div>
+		 <div class="col-4">4 col space</div>
+		 
+		 <div class="col-6">6 column space</div>
+		 <div class="col-6">6 column space</div>
+		 
+		 <div class="col-3">3 col space</div>
+		 <div class="col-3">3 col space</div>
+		 <div class="col-3">3 col space</div>
+		 <div class="col-3">3 col space</div>
+		</div>
+		<br/>
+		<br/>
+		
+		<h5 style="color:#508AA5; text-align:center;"> "col-lg-# col-sm-#" USED HERE<h5>
+		<div class="row">	
+		 <div class="col-lg-3 col-sm-6">3/6 col space</div>
+		 <div class="col-lg-3 col-sm-6">3/6 col space</div>
+		 <div class="col-lg-3 col-sm-6">3/6 col space</div>
+		 <div class="col-lg-3 col-sm-6">3/6 col space</div>
+         <div class="col-lg-6 col-sm-12">6/12 col space</div>
+		 <div class="col-lg-6 col-sm-12">6/12 col space</div> 
+	   </div>
+	   
+     </div>
+   <div id="homeBut">
+     <a href="index.html">
+	 <img src="img/homeR.png" class="logo" alt="google" > 
+	 <br/>
+	 <br/>
+	 <a href="https://www.facebook.com/" target="_blank" >	 
+     <img src="img/facebookR.png" class="logo" alt="facebook" >
+	 <br/>
+	 <br/>
+	 <a href="https://www.instagram.com/" target="_blank" >	 
+     <img src="img/instaR.png" class="logo" alt="facebook" >
+	 <br/>
+	 <br/>
+	 <a href="https://twitter.com/" target="blank">
+	 <img src="img/twitterR.png" alt="google" class="logo" > 
+   </div>
+   
+  </body>  
+ </html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> gallery </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/uni.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style> 
+           body{ background-color:#d3cdcd;}
+          .container {background-color:#d3cdcd;
+		              height:1500px;
+					  box-shadow:none;}
+  
+          @media (min-width:600px) {
+                h1::before { 
+				     content: "Following are photos of plants and animals"; 
+					 }
+				}
+          @media ( max-width : 600px) { 
+                h1::before { 
+				     content: "Plants and animals"; 
+					 } 
+			}
+          .flx { display:flex;
+                 flex-wrap:wrap; 
+                }				 
+          .flx > div { margin-left: 10px;
+		               margin-right:10px;
+		               padding:10px;
+		               background-color:#FED7D2;
+				       border-radius:10px;
+					   box-shadow:0px 0px 5px 0px;
+					  }	
+           h2,h4 { margin-left:60px; color:white, verdana; }					  
+  </style> 
+</head>
+ 
+  <body>
+   <header>
+     <img src="img/logo1.jpg" alt="image not found!!">
+	 <div class="btnBar">
+	   <button onclick="document.location = 'gallery.html'" class="btn">Gallery</button>
+	   <button onclick="document.location = 'list.html'" class="btn">Lists</button>
+	   <button onclick="document.location = 'table.html'" class="btn">Table</button>
+	   <button onclick="document.location = 'form.html'" class="btn">Form</button>	   
+	   <button type="button" class="btn">blankButton</button>
+	</div> 
+   </header>
+   <div class="container">
+     <br />
+	 <be />
+	 <br />
+	 <br />
+     <h1 style="text-align:center; color:#508AA5">  </h1>
+	 <br/>
+	 <h2>Plants</h2>
+	 <h4>Aquatic Plants</h4>
+	 
+	  <div class="flx">
+	   <div>
+	     <h5>Lotus</h5>
+		    <img src="img/gallery/plants/lotus.jpg" alt="lotus" height=160px width=230px;>
+		</div> 
+       <div>
+	     <h5>Lily</h5>
+		     <img src="img/gallery/plants/lily.jpg" alt="lily" height=160px width=230px;>
+		</div>
+       <div>
+	      <h5>Hyasinth</h5>
+		     <img src="img/gallery/plants/lotus.jpg" alt="Hyasinth" height=160px width=230px;>
+		</div>
+       <div><h5>Moneyworth</h5>
+	         <img src="img/gallery/plants/moneyworth.jpg" alt="Moneyworth" height=160px width=230px;>
+		</div>   
+     </div>
+	 <h4>Terrestrial Plants</h4>
+	 <div class="flx">
+	   <div>
+	     <h5>Neem</h5>
+		    <img src="img/gallery/plants/neem.jpg" alt="neem" height=160px width=230px;>
+		</div> 
+       <div>
+	     <h5>Juniper</h5>
+		     <img src="img/gallery/plants/juniper.jpg" alt="juniper" height=160px width=230px;>
+		</div>
+       <div>
+	      <h5>Fig</h5>
+		     <img src="img/gallery/plants/fig.jpg" alt="fig" height=160px width=230px;>
+		</div>
+       <div><h5>Bamboo</h5>
+	         <img src="img/gallery/plants/bamboo.jpg" alt="bamboo" height=160px width=230px;>
+		</div>   
+     </div>
+	 
+	 <br/>
+	 <br/>
+	 <br/>
+	 <br/>
+	 <h2>Animals</h2>
+	 <h4>Aquatic Animals</h4>
+	 
+	  <div class="flx">
+	   <div>
+	     <h5>Sea Lion</h5>
+		    <img src="img/gallery/animals/sea lion.jpg" alt="sea lion" height=160px width=230px;>
+		</div> 
+       <div>
+	     <h5>Otter</h5>
+		     <img src="img/gallery/animals/otter.jpg" alt="Otter" height=160px width=230px;>
+		</div>
+       <div>
+	      <h5>Hippo</h5>
+		     <img src="img/gallery/animals/hippo.jpg" alt="Hippo" height=160px width=230px;>
+		</div>
+       <div><h5>Seal</h5>
+	         <img src="img/gallery/animals/seal.jpg" alt="Seal" height=160px width=230px;>
+		</div>   
+     </div>
+	 <h4>Terrestrial Animals</h4>
+	 <div class="flx">
+	   <div>
+	     <h5>Tiger</h5>
+		    <img src="img/gallery/animals/tiger.jpg" alt="tiger" height=160px width=230px;>
+		</div> 
+       <div>
+	     <h5>Lion</h5>
+		     <img src="img/gallery/animals/lion.jpg" alt="Lion" height=160px width=230px;>
+		</div>
+       <div>
+	      <h5>Donkey</h5>
+		     <img src="img/gallery/animals/donkey.jpg" alt="Donkey" height=160px width=230px;>
+		</div>
+       <div><h5>Zebra</h5>
+	         <img src="img/gallery/animals/zebra.jpg" alt="Zebra" height=160px width=230px;>
+		</div>   
+     </div>
+	 
+	</div> 
+   
+   <div id="homeBut">
+     <a href="index.html">
+	 <img src="img/homeR.png" class="logo" alt="google"> 
+	 <br/>
+	 <br/>
+	 <a href="https://www.facebook.com/" target="_blank" >	 
+     <img src="img/facebookR.png" class="logo" alt="facebook">
+	 <br/>
+	 <br/>
+	 <a href="https://www.instagram.com/" target="_blank" >	 
+     <img src="img/instaR.png" class="logo" alt="facebook">
+	 <br/>
+	 <br/>
+	 <a href="https://twitter.com/" target="blank">
+	 <img src="img/twitterR.png" alt="google" class="logo"> 
+   </div>
+   
+  </body>  
+ </html>
+

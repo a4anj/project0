@@ -1,0 +1,57 @@
+ 
+  /*-- body{ background-color:#d3cdcd; } -->*/
+  
+ header {position:fixed; /*position determines position, fixed to not get scrolled */
+         top:0;
+		 left:0;
+		 box-shadow: 0 0 15px 0; /*ads shadow*/
+         width:100%;      /*positions where to place, height not required in this div*/
+         background-color:#003F7D;
+         height:70px;
+		 z-index:100}     /*z-index is used for staking order*/
+		 
+ .container {position:relative;
+             height:1000px;
+			 background-color:	#D3D3D3;
+			
+ }
+			 /*z-index:98;}	 /*higer z-index stays above another*/ 	 
+		 
+ .box{       height:85%;
+             position:absolute;  /*position is absolute here*/
+             top: 90px;
+			 left:7.5%;
+             width:85%;   /*width used with position here*/
+			 background-color:black;
+			 border-radius: 10px;  /*determines radious of border*/
+			 box-shadow: 0px 0px 20px 0px;  /*gives a shadow effect, also can be used inside :hover*/
+			 z-index:98;}	 /*higer z-index stays above another*/ 
+
+#heart{ width:100%;
+        height:80%;
+		z-index:99;}
+
+#btnBar{ position:absolute;
+         top:65%;
+         right:10%;}	
+.btn{ background-color:#003F7D;
+      border:1px solid grey;
+	  border-radius:1px;
+	  color:white;
+	  font-size:13px;
+	  font-family:times,courier,verdana;
+	  padding:10px 32px;}     /*padding increas area within*/
+.btn:hover{ background-color:#008CBA; }	/*hover: makes button hover*/ 
+.logo:hover{background-color:#224d9c;
+	        /*box-shadow: 0px 0px 20px 0px;*/}
+
+#homeBut{ transform: rotate(-90deg);/*this line will rotate homeBut div */
+          position: fixed;
+          top:-19%;
+		  left:30%;
+		  z-index:100;		  }
+/*    #btnBar a { display:block; color:white; float:right; text-align:center; padding:14px 12px; background-color:red;}
+      #btnBar a:hover{ background-color:white;}	*/	   /*These two lines are the alternative way to id #homeBut */ 		  
+         
+		
+		 

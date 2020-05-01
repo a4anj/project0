@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> list </title>
+  <link rel="stylesheet" type="text/css" href="css/uni.css"/>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <style>  
+           .flx {
+		         display : flex;
+				 flex-wrap: wrap;
+		        }
+			.flx > div {
+			             background-color:#F9F7F7;
+						 width:250px;
+						 margin:20px;
+						 border-radius:10px;
+						 box-shadow:0px 0px 10px 0px;
+                        }	
+           h2 {margin-left:60px;}					
+           .container{background-color:white;
+		               height:1200px;
+		              } 
+           .container h2{color:#787878; }   <!-- h2 is a child of container and therefore spacing or child selector used here, all child h2 of container will be effected -->
+		  
+  </style>
+</head>
+ 
+  <body>
+   <header>
+     <img src="img/logo1.jpg" alt="image not found!!" >
+	 <div class="btnBar">
+	   <button type="button" onclick="document.location = 'gallery.html'" class="btn">Gallery</button>
+	   <button type="button" onclick="document.location = 'list.html'" class="btn">Lists</button>
+	   <button type="button" onclick="document.location = 'table.html'" class="btn">Table</button>
+	   <button type="button" onclick="document.location= 'form.html'" class="btn">Form</button>
+	   <button type="button" class="btn">blankButton</button>
+	</div> 
+   </header>
+   
+   <div class="container">
+     <br />
+	 <be />
+	 <br />
+	 <br />
+      <h1 style="color:#003F7D; text-align:center"> Following are list of plants and Animals</h1>  
+	  
+	  <h2>Animals</h2>
+	  <div class="flx">
+		 <div>
+		  <h3>Aquatic Animals</h3>
+		    <ol>
+              <li>seal</li>
+				 <li>otter</li>
+				 <li>sea lion</li>
+				 <li>hippopotamus</li>	
+            </ol>				       	
+         </div>
+		 
+         <div>	
+		  <h3>Terrestrial animal</h3>
+		   <ol>
+               <li>tiger</li>
+			   <li>lion</li>
+			   <li>zebra</li>
+			   <li>donkey</li>	</ol>		 
+        </div>
+		
+		<br />
+		</div>
+		
+	<h2>Plants</h2>	
+	 <div class="flx">	
+        <div class="flx">
+		  <h3>Aquatic plants</h3>
+		      <ol>
+			    <li>Water Lily</li>
+				<li>Lotus</li>
+				<li>Water Hyacinth</li>
+				<li>Moneywort</li>
+			  </ol>	
+        </div>
+        <div>		 
+              <h3>Terrestrial Plants</h3>
+			   <ol>
+                <li>Neem</li>
+                <li>Fig</li>
+                <li>Juniper</li>
+                <li>Bamboo</li>	
+              </ol>				
+	    </div>	  
+	  </div>	
+   </div>
+   
+   <div id="homeBut">
+     <a href="index.html">
+	 <img src="img/homeR.png" class="logo" alt="google"> 
+	 <br/>
+	 <br/>
+	 <a href="https://www.facebook.com/" target="_blank" >	 
+     <img src="img/facebookR.png" class="logo" alt="facebook">
+	 <br/>
+	 <br/>
+	 <a href="https://www.instagram.com/" target="_blank" >	 
+     <img src="img/instaR.png" class="logo" alt="facebook">
+	 <br/>
+	 <br/>
+	 <a href="https://twitter.com/" target="blank">
+	 <img src="img/twitterR.png" alt="google" class="logo" > 
+   </div>
+   
+  </body>  
+ </html>

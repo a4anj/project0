@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> first page</title>
+  
+  <link rel="stylesheet" type="text/css" href="css/uni.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <style>  
+          .container{ background-color:white;}
+		  
+		  form { position:relative;
+		         top: 100px;
+				 left: 40px; }
+	 		
+	       input[type=number] {background-color:#6699FF;        
+		                       border: none;
+		                       width:90px;
+							   text-align:center;
+		                       height:30px;
+							   border-radius:20px;
+							   box-shadow:0px 0px 5px 0px;}		
+		  	  
+           input[type=text],[list=sex],[list=countries] {               
+                   		      background-color: #F5F5F5;
+		                      border:none;
+							  border-radius:10px;
+							  padding:10px 10px;
+							  box-shadow:0px 0px 5px 0px;}      <!--This part is multiple selection-->
+							  
+  </style>
+</head>
+ 
+  <body>
+   <header>
+     <img src="img/logo1.jpg" alt="image not found!!">
+	 <div class="btnBar">
+	   <button onclick="document.location = 'gallery.html'" class="btn">Gallery</button>
+	   <button onclick="document.location = 'list.html'" class="btn">Lists</button>
+	   <button onclick="document.location = 'table.html'" class="btn">Table</button>
+	   <button onclick="document.location = 'form.html'" class="btn">Form</button>
+	   <button type="button" class="btn">blankButton</button>
+	</div> 
+   </header>
+   <div class="container">
+     <br />
+	 <be />
+	 <br />
+	 <br />
+     <h1 style="text-align:center; color: #003F7D"> Fill up the below form</h1>
+     <form>
+	   
+		   <input name="name" type="text" placeholder="First Name"> &nbsp;
+		   <input name="name" type="text" placeholder="Last Name">
+		   <br/><br/>
+		   <input name="Age" type="number" placeholder="Age">   &emsp;
+		   <input name="sex" list="sex" placeholder="Sex">
+             <datalist id="sex">
+                <option value="Male">
+                <option value="Female">
+		    </datalist>	
+		    <br/><br/>
+		   Fevorite colour? 
+		           <input name="color" type="radio" value="green"> Green
+		           <input name="color" type="radio" value="red"> Red
+                   <input name="color" type="radio"	value="blue"> Blue
+                   <input name="color" type="radio" value="yallow"> Yallow				   
+            <br/><br/>
+                <input name="country" list="countries" placeholder="Country">
+                <datalist id="countries">
+                    <option value="Afghanistan">
+                    <option value="Albania">
+                    <option value="Algeria">
+                    <option value="Andorra">
+                    <option value="Angola">
+                    <option value="Zimbabwe">
+                </datalist>
+        				
+	 </form>
+   </div>
+   
+    <div id="homeBut">
+     <a href="index.html">
+	 <img src="img/homeR.png" class="logo" alt="google" > 
+	 <br/>
+	 <br/>
+	 <a href="https://www.facebook.com/" target="_blank" >	 
+     <img src="img/facebookR.png" class="logo" alt="facebook">
+	 <br/>
+	 <br/>
+	 <a href="https://www.instagram.com/" target="_blank" >	 
+     <img src="img/instaR.png" class="logo" alt="facebook">
+	 <br/>
+	 <br/>
+	 <a href="https://twitter.com/" target="blank">
+	 <img src="img/twitterR.png" alt="google" class="logo"> 
+   </div>
+   
+  </body>  
+ </html>
